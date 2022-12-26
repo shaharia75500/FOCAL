@@ -1,0 +1,499 @@
+/* Common css starts here */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+:root {
+    --firstColor: #252e30;
+    --secondColor: #2ecc71;
+    --thirdColor: #ffffff;
+    --fourthColor: #566366;
+    --fithColor: #919191;
+    --sixthColor: #f2f2f1;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-items {
+    align-items: center;
+}
+
+.justify-content {
+    justify-content: space-between;
+}
+.justify-center {
+    justify-content: center;
+}
+/* Common css ends here */
+
+/* Nav section starts here */
+nav {
+    background-color: var(--firstColor);
+}
+nav .container .row img {
+    display: block;
+}
+nav .container .row .menu ul li a {
+    display: block;
+    padding: 30px 20px;
+    text-transform: uppercase;
+    color: var(--thirdColor);
+    font-size: 16px;
+    font-weight: 700;
+    transition: 0.4s;
+}
+nav .container .row .menu ul li a:hover {
+    color: var(--secondColor);
+}
+/* Nav section ends here */
+
+/* Banner section starts here */
+#banner {
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 1001px;
+}
+#banner .container .row {
+    height: 1001px;
+}
+#banner .heroMessage {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--thirdColor);
+}
+#banner .heroMessage h2 {
+    display: inline-block;
+    font-size: 60px;
+    padding: 20px 0;
+    margin-bottom: 50px;
+    border-top: 2px solid var(--thirdColor);
+    border-bottom: 2px solid var(--thirdColor);
+}
+#banner .heroMessage a {
+    color: inherit;
+    display: block;
+    width: 185px;
+    font-size: 18px;
+    padding: 20px 0;
+    margin: auto;
+    border: 2px solid var(--thirdColor);
+    transition: 0.3s;
+}
+#banner .heroMessage a:hover {
+    border: 2px solid var(--secondColor);
+    background-color: var(--secondColor);
+    color: var(--thirdColor);
+    border-radius: 10px;
+}
+/* Banner section ends here */
+
+/* About section starts here */
+/* About section's top area starts here */
+#about .container .topArea .card {
+    width: 354px;
+    padding-top: 98px;
+    padding-bottom: 101px;
+}
+#about .container .topArea .card h3 {
+    padding-bottom: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--fourthColor);
+}
+#about .container .topArea .card p {
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--fithColor);
+}
+/* About section's top area ends here */
+#about .mainArea {
+    background-color: #f2f2f1;
+    position: relative;
+}
+#about .mainArea .imgAbout img {
+    position: absolute;
+    transition: 0.6s;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+}
+#about .mainArea .imgAbout img:last-child {
+    opacity: 0;
+}
+#about .mainArea .imgAbout:hover img:last-child {
+    opacity: 100;
+}
+/* Common Head Section starts here */
+.commonHeadSection {
+    margin-left: auto;
+    width: 57%;
+    padding: 100px 0;
+}
+.commonHeadSection h3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--fourthColor);
+    padding-bottom: 49px;
+    text-transform: uppercase;
+}
+.commonHeadSection p {
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--fithColor);
+}
+.commonHeadSection p:nth-child(2) {
+    padding-bottom: 47px;
+}
+/* Common Head section ends here */
+/* About section's main text area starts here  */
+#about .mainArea .container .commonHeadSection .aboutCard {
+    padding-top: 56px;
+    width: 310px;
+}
+#about .mainArea .container .commonHeadSection .aboutCard .aboutCardIcon {
+    height: 40px;
+}
+#about .mainArea .container .commonHeadSection .aboutCard .aboutCardIcon img {
+    height: 100%;
+}
+#about .mainArea .container .commonHeadSection .aboutCard .aboutCardText {
+    width: 250px;
+}
+#about .mainArea .container .commonHeadSection .aboutCard .aboutCardText h3 {
+    padding-bottom: 25px;
+    font-size: 22px;
+}
+#about .mainArea .container .commonHeadSection .aboutCard .aboutCardText p {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0;
+}
+/* About section's main text area ends here  */
+/* About section ends here */
+
+
+/* My skill section starts here */
+#mySkill .commonHeadSection {
+    margin: 0;
+    width: 550px;
+}
+#mySkill .commonHeadSection a {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--secondColor);
+    padding: 20px 36px;
+    margin-top: 50px;
+    border: 2px solid var(--secondColor);
+    transition: 0.4s;
+}
+#mySkill .commonHeadSection a:hover {
+    border: 2px solid var(--secondColor);
+    background-color: var(--secondColor);
+    color: var(--thirdColor);
+    border-radius: 10px;
+}
+#mySkill .skillPercentage {
+    width: 550px;
+    background-color: var(--sixthColor);
+    margin-bottom: 40px;
+}
+#mySkill .actualPercentage {
+    background-color: var(--secondColor);
+    padding: 9px;
+    text-align: right;
+    color: var(--thirdColor);
+    font-size: 18px;
+}
+#mySkill .photoshop .actualPercentage {
+    width: 90%;
+}
+#mySkill .illustrator .actualPercentage {
+    width: 80%;
+}
+#mySkill .htmlCss .actualPercentage {
+    width: 90%;
+}
+#mySkill .phpMysql .actualPercentage{
+    width: 70%;
+}
+#mySkill .skills {
+    padding-top: 136px;
+    margin-bottom: 100px;
+}
+#mySkill .skills h3 {
+    color: var(--fourthColor);
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+/* My skill section ends here */
+
+/* resume starts here */
+#resume {
+    text-align: center;
+    background-color: var(--sixthColor);
+    padding: 100px 0;
+}
+#resume h3 {
+    text-transform: uppercase;
+    color: var(--fourthColor);
+    font-size: 30px;
+    padding-bottom: 49px;
+}
+#resume p {
+    color: var(--fithColor);
+    width: 1020px;
+    margin: auto;
+    padding-bottom: 46px;
+    font-size: 18px;
+    line-height: 30px;
+}
+#resume a {
+    padding: 20px;
+    border: 2px solid var(--secondColor);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--secondColor);
+    transition: 0.4s;
+}
+#resume a:hover {
+    border: 2px solid var(--secondColor);
+    background-color: var(--secondColor);
+    color: var(--thirdColor);
+    border-radius: 10px;
+}
+/* resume ends here */
+
+/* my education section starts here */
+#myEducation .container{
+    border-bottom: 1px solid #ccc;
+}
+#myEducation .commonHeadSection {
+    margin: 0;
+    width: 540px;
+}
+#myEducation .myEducationCard {
+    padding-top: 173px;
+    padding-bottom: 100px;
+}
+.commonCard:last-child {
+    padding-top: 70px;
+}
+.commonCard {
+    width: 550px;
+}
+.commonCard h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--fourthColor);
+    text-transform: uppercase;
+}
+.commonCard p:nth-child(2) {
+    font-size: 18px;
+    color: var(--fithColor);
+    padding: 20px 0;
+}
+.commonCard p:nth-child(3) {
+    display: inline-block;
+    padding: 10px 11px;
+    background-color: var(--secondColor);
+    color: var(--thirdColor);
+    font-size: 14px;
+    font-weight: 700;
+}
+.commonCard p:nth-child(4) {
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--fithColor);
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+}
+/* my education section ends here */
+
+/* work experience starts here */
+#myWorkExperience .commonHeadSection {
+    margin: 0;
+    width: 540px;
+}
+#myWorkExperience .myWorkExperienceCard {
+    padding-top: 173px;
+    padding-bottom: 100px;
+}
+#myWorkExperience  .commonCard:first-child {
+    padding-bottom: 70px;
+}
+/* work experience ends here */
+
+/* Testimonials section starts here */
+#testimonials {
+    background-color: var(--sixthColor);
+    padding: 100px 0;
+}
+#testimonials .testimonialsContent {
+    text-align: center;
+}
+#testimonials .testimonialsContent i:first-child {
+    display: inline-block;
+    width: 1060px;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--fithColor);
+    padding-bottom: 45px;
+}
+#testimonials .testimonialsContent p {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--fourthColor);
+    padding-bottom: 49px;
+}
+#testimonials .testimonialsContent i:last-child {
+    font-size: 50px;
+    color: var(--secondColor);
+}
+/* Testimonials section ends here */
+
+/* Portfolio section starts here */
+#portfolio .portfolioContent {
+    text-align: center;
+    padding: 100px 0;
+}
+#portfolio .portfolioContent h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--fourthColor);
+    padding-bottom: 49px;
+}
+#portfolio .portfolioContent p {
+    width: 1020px;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--fithColor);
+    margin: auto;
+}
+#portfolio .portfolioImg {
+    padding-bottom: 100px;
+}
+#portfolio .portfolioImg img {
+    display: block;
+}
+.imgCard {
+    position: relative;
+    margin-top: 50px;
+}
+.imgOverlay {
+    background-color: var(--secondColor);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s;
+}
+.imgOverlay:hover {
+    opacity: 0.75;
+}
+.imgOverlay .row {
+    height: 100%;
+}
+.imgOverlay i {
+    font-size: 35px;
+    color: var(--thirdColor);
+    align-self: center;
+}
+/* Portfolio section ends here */
+
+/* Footer section starts here */
+footer {
+    background-color: #252e30;
+    padding: 100px 0;
+    
+}
+footer .Address h3 {
+    color: var(--thirdColor);
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+}
+footer .Address p {
+    color: var(--fithColor);
+    width: 540px;
+    padding: 50px 0;
+    font-size: 18px;
+    line-height: 30px;
+}
+footer .Address address {
+    width: 160px;
+    color: var(--fithColor);
+    font-size: 18px;
+    line-height: 30px;
+}
+footer .contactForm {
+    width: 540px;
+}
+footer .contactForm form label {
+    font-size: 18px;
+    line-height: 50px;
+    color: var(--thirdColor);
+}
+footer .contactForm form input,
+footer .contactForm form textarea {
+    font-size: 18px;
+    text-indent: 15px;
+    border: 0;
+    width: 100%;
+    height: 55px;
+    background-color: #4b5456;
+    resize: none;
+}
+footer .contactForm form textarea {
+    display: block;
+    width: 540px;
+    height: 279px;
+}
+footer .contactForm form button {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--thirdColor);
+    padding: 23px 38px;
+    background-color: #191f21;
+    margin-top: 40px;
+    border: 0;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+footer .contactForm form button:hover {
+    color: var(--thirdColor);
+    background-color: #191f21;
+}
+/* Footer section starts here */
